@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Home page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <!-- Notice! , we are putting it after the basic 
+    style.css -->
+
+</head>
+<body>
+    
+
+    <!--As we want the various sections of the top-banner to be alligned perfectly, so let's put 
+    them into some container so that we can apply rules to it-->
+    <!-- top-banner -->
+
+    <div class="top-banner">
+
+        <div class="container">
+            <div class="small-bold-text banner-text"> 😜 New to Usability Hub: Open and Closed card sorting</div>
+         </div>
+
+    </div>  
+    
+    <!--We will use the container in each section-->
+    
+    <!--Our navigation bar will contain logo and menu , so we will use the flex-box property
+     to get that allignment-->
+    
+     <!--nav bar-->
+
+    <nav>
+        
+        <!--out main-nav will be a flex-->
+
+        <div class="container main-nav flex">
+
+            <a href="#" class="company-logo">
+              <img src="./assets/asset 1.png" alt="company logo">
+            </a>
+
+            <div class="nav-links" id="nav-links">
+
+                <ul class="flex">  <!--I also want my menu to be flex items -->
+                    <li><a href="#" class="hover-link">Products</a></li>
+                    <li><a href="#" class="hover-link">Customer</a></li>
+                    <li><a href="#" class="hover-link">Pricing</a></li>
+                    <li><a href="#" class="hover-link">Resources</a></li>
+                    <li><a href="#" class="hover-link secondary-button">Sign in</a></li>
+                    <li><a href="#" class="hover-link primary-button">Sign up</a></li>
+                </ul>
+
+            </div>
+             
+            <!--Creating our hamburger icon -->
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle"> 
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+        </div>
+
+    </nav>
+    
+    <!--The header contains two parts again , a text 
+    section and an image section, we will use a 
+    flex-box container again-->
+    
+    <!--header section -->
+    <header>
+
+        <!--Since, we have made the container to be 
+        flex thus the header-left and header-right will 
+        get alligned automatically row-wise. -->
+
+        <div class="container header-section flex">
+
+            <div class="header-left">
+
+                <h1>Design Confidently</h1>
+
+                <p>UsabilityHub is a remote user research platform that 
+                takes the guesswork out of design decisions by 
+                validating them with real users.
+                </p>
+
+                <a href="#" class="primary-button get-started-btn">Get Started</a>
+
+            </div>
+
+            <div class="header-right">
+
+               <img src="./assets/asset 2.jpeg" alt="hero-image">
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--companies section -->
+
+    <!--We have a text and a list of companies aligned 
+    in a single row -->
+
+    <section class="companies-section">
+
+          <div class="container">
+
+              <div class="small-bold-text companies-header">
+
+                The world’s best companies rely on UsabilityHub to make better design decisions.
+
+              </div>
+               
+              <!-- we want the logos to be in a flex-box -->
+              <div class="logos flex">
+
+                <img src="./assets/asset 3.png" alt="" class="logo">
+                <img src="./assets/asset 4.png" alt="" class="logo">
+                <img src="./assets/asset 5.png" alt="" class="logo">
+                <img src="./assets/asset 6.png" alt="" class="logo">
+                <img src="./assets/asset 7.png" alt="" class="logo">
+                <img src="./assets/asset 8.svg" alt="" class="logo">
+                <img src="./assets/asset 9.png" alt="" class="logo">
+
+              </div>
+
+          </div>
+
+    </section>
+    
+    <!-- features section -->
+
+    <!-- we have a text as a heading for the features and a list
+    of all the features to be alligned using a flex-box -->
+
+    <section class="features-section">
+
+        <div class="container">
+
+              <div class="features-header">
+                 <h2 class="features-heading-text">Your user research Swiss Army knife</h2>
+                 <a href="#" class="secondary-button">See all features <i class="fa-solid fa-right-long"></i></a>
+              </div>
+
+              <!--Now, let's design the actual features, it's
+              going to be a flex-box-->
+
+              <div class="features-area flex">
+
+                <!--each feature card contains an image, a heading ,
+                a paragraph and a button . We will put it into a flex-box
+                and set the flex-direction to column bcoz we want them
+                to be vertically alligned -->
+
+                    <div class="features-card flex"><!--F1-->
+
+                        <img src="./assets/asset 11.svg" alt="">
+                        <h3>Card Sorting</h3>
+                        <p>Discover how people group and label information.</p>
+                        <a href="#" class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
+
+                    </div>
+
+                    <div class="features-card flex"><!--F2-->
+
+                        <img src="./assets/asset 13.svg" alt="">
+                        <h3>Prototype tests</h3>
+                        <p>Discover how people navigate your Figma prototypes.</p>
+                        <a href="#" class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
+
+                    </div>
+
+                    <div class="features-card flex"><!--F3-->
+                        <img src="./assets/asset 14.svg" alt="">
+                        <h3>First click tests</h3>
+                        <p>Test interaction with first click and navigation tests.</p>
+                        <a href="#" class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
+                    </div>
+
+                    <div class="features-card flex"><!--F4-->
+                        <img src="./assets/asset 15.svg" alt="">
+                        <h3>Design surveys</h3>
+                        <p>Get feedback on images, videos or audio files.</p>
+                        <a href="#" class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
+                    </div>
+
+                    <div class="features-card flex"><!--F5-->
+                        <img src="./assets/asset 16.svg" alt="">
+                        <h3>Preference tests</h3>
+                        <p>Find out which designs users prefer and why.</p>
+                        <a href="#" class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
+                    </div>
+
+                    <div class="features-card flex"><!--F6-->
+                        <img src="./assets/asset 17.svg" alt="">
+                        <h3>Five second tests</h3>
+                        <p>Test comprehensibility by measuring first impressions.</p>
+                        <a href="#" class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
+                    </div>
+
+              </div>
+
+        </div>
+
+    </section>
+
+    <!-- big features section -->
+
+    <!-- each of the big feature section contains 
+    an image on one side and a text on the other
+    again, we can create a flex-box. -->
+
+    <section class="big-feature-section">
+
+           <div class="container flex big-feature-container">
+
+                <div class="feature-img">
+                    <img src="./assets/asset 18.png" alt="">
+                </div>
+
+                <!-- put the description section also in a
+                flex-box so that it can be alligned -->
+
+                <div class="feature-desc flex">
+                    <h4>Effortless validation for</h4>
+                    <h3>Design professionals</h3>
+                    <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful experiences for your users.</p>
+                </div>
+
+           </div>
+
+    </section>
+
+    <section class="big-feature-section">
+     
+        <!-- for the second big-feature-section , we want 
+        the image to lie on the left and description to lie 
+        on the right so, we can set the flex-direction to row-reverse -->
+
+        <div class="container flex big-feature-container" id="second-big-feature" >
+
+            <div class="feature-img">
+                <img src="./assets/asset 21.png" alt="">
+            </div>
+
+            <!-- put the description section also in a
+            flex-box so that it can be alligned -->
+
+            <div class="feature-desc flex">
+                <h4>Effortless validation for</h4>
+                <h3>Design professionals</h3>
+                <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful experiences for your users.</p>
+            </div>
+
+       </div>
+         
+    </section>
+
+    <section class="big-feature-section">
+        
+        <div class="container flex big-feature-container">
+
+            <div class="feature-img">
+                <img src="./assets/asset 24.png" alt="">
+            </div>
+
+            <!-- put the description section also in a
+            flex-box so that it can be alligned -->
+
+            <div class="feature-desc flex">
+                <h4>Effortless validation for</h4>
+                <h3>Design professionals</h3>
+                <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful experiences for your users.</p>
+            </div>
+
+       </div>
+
+    </section>
+
+    <!-- examples section -->
+
+    <!--This section starts with a small heading and description
+    thereafter we will create various sections containing examples.
+
+    -->
+
+    <section class="examples-section">
+
+       <div class="container">
+
+         <div class="examples-header flex">
+
+            <h2 class="examples-heading-text">One platform, endless possibilities</h2>
+            <a href="#" class="secondary-button">See more examples <i class="fa-solid fa-right-long"></i></a>
+
+         </div>
+
+         <div class="examples-area flex">
+
+             <a href="#" class="examples-card"> 
+                <h3 class="card-text"> Can users complete a task in my software interface </h3>
+             </a>
+
+             <a href="#" class="examples-card"> 
+                <h3 class="card-text"> Can users find important pages on my website</h3>
+             </a>
+
+             <a href="#" class="examples-card"> 
+                <h3 class="card-text"> Is my website's intended audience clear? </h3>
+             </a>
+
+             <a href="#" class="examples-card"> 
+                <h3 class="card-text"> Do visitors understand what a page is about? </h3>
+             </a>
+
+         </div>
+
+       </div>
+
+    </section>
+    
+    <!--cta section -->
+
+    <!--Nothing much to do here-->
+
+    <section class="cta-section">
+          
+        <div class="container flex cta-section-container">
+
+            <h2>Start testing today</h2>
+            <p>Take the guesswork out of design decisions</p>
+            <a href="#" class="primary-button">Get Started</a>
+
+        </div>
+
+    </section>
+
+     <!--Finally, let's create the footer part of the page-->
+
+     <!--The footer contains the company-logo and three lists-->
+
+    <footer>
+
+           <div class="container flex footer-container">
+
+            <a href="#" class="company-logo">
+            <img src="./assets/asset 1.png" alt="company-logo">
+            </a>
+
+            <div class="link-column flex">
+                <h4>Product</h4>
+                <a href="#" class="hover-link">Overview</a>
+                <a href="#" class="hover-link">Pricing</a>
+                <a href="#" class="hover-link">Research panel</a>
+                <a href="#" class="hover-link">Customers</a>
+                <a href="#" class="hover-link">Status page</a>
+            </div>
+
+            <div class="link-column flex">
+                <h4>Methodologies</h4>
+                <a href="#" class="hover-link">Card sorting</a>
+                <a href="#" class="hover-link">Prototype testing</a>
+                <a href="#" class="hover-link">First click tests</a>
+                <a href="#" class="hover-link">Preference tests</a>
+                <a href="#" class="hover-link">Five second tests</a>
+            </div>
+
+            <div class="link-column flex">
+                <h4>Resources</h4>
+                <a href="#" class="hover-link">Blog</a>
+                <a href="#" class="hover-link">Examples</a>
+                <a href="#" class="hover-link"> Testing guides</a>
+                <a href="#" class="hover-link">Research panel calculator</a>
+                <a href="#" class="hover-link">Help center</a>
+            </div>
+
+           </div>
+
+    </footer>
+
+    <!-- subfooter -->
+
+    <div class="sub-footer">
+
+        <div class="container flex subfooter-container">
+           <a href="#" class="hover-link">Privacy Policy</a>
+           <a href="#" class="hover-link">Terms & Conditions</a>
+           <a href="#" class="hover-link">Security Information</a>
+           <a href="#" class="hover-link"><i class="fa-brands fa-square-facebook"></i></a>
+           <a href="#" class="hover-link"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/3b0dfdca54.js" crossorigin="anonymous"></script>
+
+    <!-- To handle click event on the nav-bar , we need 
+    to write a little bit of javascript -->
+
+    <script>
+        /* first access the toggle button */
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', () =>{
+            
+            navLinks.classList.toggle('active');
+
+        });
+
+    </script>
+
+</body>
+
+</html>
